@@ -11,11 +11,11 @@ export default function PopupWithImage(props) {
         />
         <img
           src={props.card.link}
-          alt="увеличенная фотография красивого вида"
+          alt={props.card.name}
           className="zoom__image"
           onClick={props.onClick}
         />
-        <figcaption className="zoom__caption" />
+        <figcaption className="zoom__caption" >{props.card.name}</figcaption>
       </figure>
     </div>
   );

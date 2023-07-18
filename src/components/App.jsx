@@ -86,7 +86,28 @@ function App() {
         title="Новое место"
         submitButtonValue="Создать"
         onClose={closeAllPopups}
-      />
+      >
+        <input
+              required
+              name="name"
+              minLength="2"
+              maxLength="30"
+              type="text"
+              placeholder="Название"
+              id="input-card-name"
+              className="form__input form__input_type_avatar"
+            />
+            <span className="error" id="input-card-name-error"></span>
+            <input
+              required
+              name="link"
+              type="url"
+              placeholder="Ссылка на картинку"
+              id="input-card-url"
+              className="form__input form__input_type_url"
+            />
+            <span className="error" id="input-card-url-error"></span>
+      </PopupWithForm>
 
       <PopupWithForm
         name="avatar"
@@ -100,10 +121,10 @@ function App() {
           name="avatar"
           type="url"
           placeholder="Ссылка на картинку"
-          id="inpit-avatar"
+          id="input-avatar"
           className="form__input form__input_type_url"
         />
-        <span className="error" id="inpit-avatar-error"></span>
+        <span className="error" id="input-avatar-error"></span>
       </PopupWithForm>
 
       <PopupWithForm

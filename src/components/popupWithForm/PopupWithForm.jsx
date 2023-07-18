@@ -9,7 +9,7 @@ export default function PopupWithForm(props) {
         />
         <form
         className="form form_place_profile"
-        name="{props.name}"
+        name={props.name}
         method="post"
         noValidate
         >
