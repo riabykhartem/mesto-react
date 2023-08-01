@@ -12,15 +12,15 @@ export default function PopupWithForm(props) {
         name={props.name}
         method="post"
         noValidate
+        onSubmit={props.onSubmit}
         >
           <h2 className="form__title">{props.title}</h2>
           {props.children}
           <button
             type="submit"
-            className="form__save-button"
-            disabled
+            className="form__save-button" 
             >
-              {props.submitButtonValue}
+              {props.submitButtonText}
           </button>
         </form>
       </div>
