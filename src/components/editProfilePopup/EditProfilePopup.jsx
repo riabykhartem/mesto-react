@@ -15,8 +15,8 @@ export default function EditProfilePopup(props) {
     function handleSubmit(e) {
         // Запрещаем браузеру переходить по адресу формы
         e.preventDefault();
-          currentUser.name = name
-          currentUser.about = description
+          // currentUser.name = name
+          // currentUser.about = description
         // Передаём значения управляемых компонентов во внешний обработчик
         props.onUpdateUser({
           name,
